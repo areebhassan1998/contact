@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td style=width:"200px";>Gender:</td>
+                <td><input type="radio" name="Gender">Male <input type="radio" name="Gender">Female</td>
+    
+            </tr>
+            <tr>
+                <td style=width:"200px">Gender:</td>
+                <td><input type="checkbox" name="Gender">Male <input type="checkbox" name="Gender">Female</td>
+    
+            </tr>
+            <tr>
+                <td style=width:"200px">Date:</td>
+                <td>Age<input type="date"> </td>
+    
+            </tr>
+            <label for="datemin">Enter a date after 2021-02-16:</label>
+            <input type="date" id="datemin" name="datemin" min="2021-02-16">
+
+            <label for="datemax">Enter a date after 2025-02-16:</label>
+            <input type="date" id="datemax" name="datemax" max="2025-02-16"><br>
+
+
+            <label for="birthdayTime">Enter a Date and Time:</label>
+            <input type="datetime-local" name="birthdaytime" id:"datetime-local">
+
+            <label for="Myfile">Select a file:</label>
+            <input type="myfile" id="myfile" name="myfile" >
+            <input type="submit" value="Submit"><br>
+
+            <label for="quantity">Quantity(between 1 and 15):</label>
+            <input type="number" name="quantity" min="1" max="15">
+            <input type="submit" value="Submit"><br>
+
+            <label for="vol">Volume(between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="1" max="50">
+            <input type="submit" value="Submit">
+
+            <label for="Search">Search:</label>
+            <input type="search" id="search" name="search" min="1" max="50">
+            <input type="submit" value="Submit"><br>
+
+            <label for="">PTCL No.:</label>
+            <input type="tel" id="phone" name="phone" placeholder="021-36656798" pattern="[0][2][1]-[3][0-9]{7}" required>
+            <input type="submit" value="Submit"><br>
+
+            <label for="">Mobile No.:</label>
+            <input type="tel" id="phone" name="phone" placeholder="0314-2357194" pattern="[0][3][1-9]{2}-[0-9]{7}" required>
+            <input type="submit" value="Submit">
+            <small>Format:0312-564235</small><br>
+            
+
+        </table>
+    </form>
+</body>
+</html>
